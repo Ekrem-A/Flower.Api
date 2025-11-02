@@ -19,8 +19,71 @@ public class FlowerDbContext : DbContext
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<FlowerProduct>().HasData(
-            new FlowerProduct { Id = 1, Code = "FLR-001", Name = "Pembe Gül Buketi", Category = "bouquet", Price = 850 },
-            new FlowerProduct { Id = 2, Code = "FLR-002", Name = "Beyaz Orkide", Category = "orchid", Price = 1200 }
+            new FlowerProduct
+            {
+                Id = 1,
+                Code = "FLR-001",
+                Name = "Pembe Gül Buketi",
+                Category = "bouquet",
+                Price = 850
+            },
+            new FlowerProduct
+            {
+                Id = 2,
+                Code = "FLR-002",
+                Name = "Beyaz Orkide",
+                Category = "orchid",
+                Price = 1200
+            },
+            new FlowerProduct
+            {
+                Id = 3,
+                Code = "FLR-003",
+                Name = "Kırmızı Güller 11’li",
+                Category = "bouquet",
+                Price = 690
+            },
+            new FlowerProduct
+            {
+                Id = 4,
+                Code = "FLR-004",
+                Name = "Mevsim Çiçekleri Vazoda",
+                Category = "mixed",
+                Price = 540
+            },
+            new FlowerProduct
+            {
+                Id = 5,
+                Code = "FLR-005",
+                Name = "Saksı Orkide Çift Dal",
+                Category = "orchid",
+                Price = 1450
+            },
+            new FlowerProduct
+            {
+                Id = 6,
+                Code = "FLR-006",
+                Name = "Teraryum Küçük Dünya",
+                Category = "terrarium",
+                Price = 820
+            },
+            new FlowerProduct
+            {
+                Id = 7,
+                Code = "FLR-007",
+                Name = "Söz – Nişan Masası Çiçeği",
+                Category = "ceremony",
+                Price = 1950
+            },
+            new FlowerProduct
+            {
+                Id = 8,
+                Code = "FLR-008",
+                Name = "Doğum Günü Pembe Aranjman",
+                Category = "birthday",
+                Price = 780
+            }
         );
     }
+
 }
