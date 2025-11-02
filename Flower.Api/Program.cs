@@ -7,8 +7,10 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // DB (in-memory)
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<FlowerDbContext>(options =>
-    options.UseInMemoryDatabase("FloristDb"));
+    options.UseSqlServer(connectionString));
 
 // DI
 builder.Services.AddScoped<IProductService, ProductService>();
