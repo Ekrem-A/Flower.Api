@@ -24,7 +24,8 @@ public class ProductService : IProductService
                 Code = p.Code,
                 Name = p.Name,
                 Category = p.Category,
-                Price = p.Price
+                Price = p.Price,
+                ImageUrl = p.ImageUrl
             })
             .ToListAsync();
     }
@@ -40,7 +41,8 @@ public class ProductService : IProductService
             Code = p.Code,
             Name = p.Name,
             Category = p.Category,
-            Price = p.Price
+            Price = p.Price,
+            ImageUrl = p.ImageUrl
         };
     }
 
@@ -65,7 +67,8 @@ public class ProductService : IProductService
             Code = entity.Code,
             Name = entity.Name,
             Category = entity.Category,
-            Price = entity.Price
+            Price = entity.Price,
+            ImageUrl = entity.ImageUrl
         };
     }
 
@@ -90,7 +93,8 @@ public class ProductService : IProductService
             Code = entity.Code,
             Name = entity.Name,
             Category = entity.Category,
-            Price = entity.Price
+            Price = entity.Price,
+            ImageUrl = entity.ImageUrl
         };
     }
 
